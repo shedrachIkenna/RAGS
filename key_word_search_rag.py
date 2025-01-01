@@ -4,10 +4,11 @@ class BasicRAG:
     def __init__(self):
         self.documents = []
 
+    # Add documents 
     def add_documents(self, document):
         self.documents.append(document)
     
-
+    # Search 
     def search(self, query):
         results = []
         for doc in self.documents:
